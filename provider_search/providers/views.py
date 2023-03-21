@@ -29,7 +29,7 @@ def provider_list(request):
         return JsonResponse({"data": list(increase_views(providers).values())}, safe=False)
     else:
         providers = Provider.objects.all().values()
-        return JsonResponse({"data": list(providers.vaues())}, safe=False)
+        return JsonResponse({"data": list(providers.values())}, safe=False)
 
 def increase_views(providers):
     for pvdr in providers:
