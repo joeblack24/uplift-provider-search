@@ -19,5 +19,5 @@ from providers import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('provider_filter', views.provider_list),
+    path('provider_filter', views.provider_list, name='provider_list'),
 ]
